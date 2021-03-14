@@ -138,7 +138,6 @@ nav {
   top:0px;
 }
 #banner { 
-  /* background-color:rgba(0, 0, 0, 0.36); */
   width:1440px;
   height:800px;
   position:absolute;
@@ -204,7 +203,7 @@ nav {
   font-family:Poppins;
   text-align:center;
   font-size:15px;
-  letter-spacing:2;
+  letter-spacing:2px;
   line-height: 6.5px;
   position:relative;
   left:339px;
@@ -212,6 +211,19 @@ nav {
   display: inline-block;
   width: 135px;
 
+}
+
+a {
+  color:white;
+  text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .block{
@@ -338,32 +350,6 @@ nav {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0%);
-
-    /*
-  color: white;
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 14px;  
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.5em;
-  text-transform: uppercase;
-
-  /*transform: rotate(-5.148328309985126e-15deg);
-  color:rgba(255, 255, 255, 1);
-  width:1440px;
-  height:18.385713577270508px;
-  position:absolute;
-  left:0px;
-  top:1.1368683772161603e-13px;
-  font-family:Open Sans;
-  text-align:center;
-  font-size:16px;
-  letter-spacing:50;
-  line-height:px; */
 }
 #e1_22 { 
   width:200px;
@@ -397,7 +383,6 @@ nav {
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
-  /* or 143% */
   
   display: flex;
   align-items: center;
@@ -405,19 +390,6 @@ nav {
   letter-spacing: 0.05em;
   color:white;
 
-/*
-  color:rgba(255, 255, 255, 1);
-  width:200px;
-  height:60px;
-  position:absolute;
-  left:0px;
-  top:0px;
-  font-family:Poppins;
-  text-align:center;
-  font-size:14px;
-  letter-spacing:5;
-  line-height:px;
-  */
 }
 #e1_25 { 
   color:rgba(255, 255, 255, 1);
@@ -543,23 +515,6 @@ h2 {
   height:102px;
   left:900px;
   top:880px;
-  /*
-  left: 62.5%;
-  right: 12.15%;
-  top: 38.83%;
-  bottom: 56.75%; */
-  /*
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 38px;
-  line-height: 136%; 
-  
-  text-align: center;
-  letter-spacing: 1px;
-  
-  color: #14142B;
-  */
 
 }
 #e1_36 { 
@@ -590,49 +545,30 @@ h2 {
 }
 
 .splitrow {
-  /* background-color: rgba(249.6875050663948, 241.0063236951828, 220.55729538202286, 1); */
     width: 50%;
     height: 433px;
     position: absolute;
     top: 800px;
 }
-/*
-#hpicon{
-  position: absolute;
-  width: 442px;
-  height: 320px;
-  left: 114px;
-  top: 56px;
 
-  background: url(images/truck_icon.png);
-} */
 
 #hpicon{
     position: absolute;
-    width: 450;
+    width: 450px;
     height: 380px;
     left: 114px;
-    top: 790;
+    top: 790px;
     background: url(images/truck_icon.png);
     background-size: cover;
 }
-/*
-#carticon{
-    position: absolute;
-    width: 450;
-    height: 380px;
-    left: 114px;
-    top: 790;
-    background: url(images/shopping-cart-icon.png);
-    background-size: cover;
-} */
+
 
 #carticon {
     position: absolute;
     width: 45px;
     height: 37px;
-    left: 1340;
-    top: 35;
+    left: 1340px;
+    top: 35px;
     background: url(images/shopping-cart-icon.png);
     background-size: 45px;
 }
