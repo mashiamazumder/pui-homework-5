@@ -4,92 +4,178 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Savory</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   </head>
 
   <body>
 
+    <div class="nav" id="navhome">
+                  <div  id="navback" style="background-color:#732006;"></div>
+
+                  <ul>
+                    <li> <a href="index.html"> HOME </a></li> <li style="text-decoration:underline;">SHOP</li> <li> FILL </li><li> ABOUT </li> <li> CONTACT </li>
+                  </ul>
+
+                  <div id="carticon"> </div>
+
+
+                  <div class="logof">
+                    <div  id="e1_18"> </div>
+                    <div  id="e1_19"> </div>
+                  </div>
+        </div>
+
     <div class="container">
 
-      <header>
-        <img src="https://content.codecademy.com/courses/learn-css-grid/lesson-ii/savory.svg" class="logo">
-      </header>
+      <h2 style="margin-top: 100px;color:#732006;"> THE SHOP </h2>
+
+      <div class="dropdown">
+        <button class="dropbtn">Sort by: Featured</button>
+        <div class="dropdown-content">
+          <a href="#">Featured (default)</a>
+          <a href="#">Price - Low to High</a>
+          <a href="#">Price - High to Low</a>
+        </div>
+      </div>
 
       <main>
-        <div class="recipe a">
-          <img src="https://content.codecademy.com/courses/learn-css-grid/lesson-ii/image-1.png" />
-          <h2>Original Cinnamon Roll</h2>
-          <img src="https://content.codecademy.com/courses/learn-css-grid/lesson-ii/time.svg" class="time" />
-          <p class="mins">20 mins</p>
-          <p class="description">
-            This delicious chocolate mousse will delight dinner guests of all ages!</p>
+
+        <!--
+        <div class="row">
+          <div class="example-1 card">
+            <div class="wrapper">
+             
+             <div class="image">
+               <img class="book-image" src="https://bit.ly/2GkldBe"/>
+             </div>
+              
+              <div class="data">
+                <div class="content">
+                  <span class="status">A fan-favorite!</span>
+                  <h1 class="title"><a href="#" class="cardTitle">Original Flavor</a></h1>
+                  <p class="price">$3.99</p>
+                <p><button>View More</button></p>
+        
+                </div>
+              </div>
+              
+            </div>
+          </div>
         </div>
-        <div class="recipe b">
-          <img src="https://content.codecademy.com/courses/learn-css-grid/lesson-ii/image-2.png" />
-          <h2>Blueberry Roll</h2>
-          <img src="https://content.codecademy.com/courses/learn-css-grid/lesson-ii/time.svg" class="time" />
-          <p class="mins">120 mins</p>
-          <p class="description">
-            Want to feel like your favorite relative came over and made you dinner? This comfort meal of smoked lamb and rice will quickly become a weekend favorite!
-          </p>
+        -->
+
+
+
+        <div class="order a">
+          <img class="prod-img" src="images/original-roll.jpeg" />
+          <!-- <img src="https://content.codecademy.com/courses/learn-css-grid/lesson-ii/time.svg" class="time" />
+          -->
+          <div class="prod-info">
+            <h3>Original</h3>
+            <h4>$3.99</h4>
+            <img class="plus-img" src="images/plus.png" style="margin-top: 65px;"/>
+            <!-- <p class="description">
+              The original cinnamon roll is a fan-favorite and will delight dinner guests of all ages!</p>
+            -->
+          </div>
         </div>
-        <div class="recipe c">
-          <img src="https://content.codecademy.com/courses/learn-css-grid/lesson-ii/image-5.png" />
-          <h2>Walnut roll</h2>
-          <img src="https://content.codecademy.com/courses/learn-css-grid/lesson-ii/time.svg" class="time" />
+
+        <div class="order b">
+          <img class="prod-img" src="images/gf-roll.png" />
+          <!-- <img src="https://content.codecademy.com/courses/learn-css-grid/lesson-ii/image-3.png" /> -->
+          <div class="prod-info">
+          <h3>Original<br>Gluten-Free</h3>
+          <h4>$3.99</h4>
+          <img class="plus-img" src="images/plus.png" />
+          <!-- <img src="https://content.codecademy.com/courses/learn-css-grid/lesson-ii/time.svg" class="time" />
+          
+          <p class="mins">90 mins</p>
+          
+          <p class="description">
+            Making this classic summer treat at home will remind you of a childhood spent in the park.</p>
+          -->
+          </div>
+        </div>
+
+
+        <div class="order c">
+          <img class="prod-img" src="images/walnut-2.jpeg" />
+          <!-- <img src="https://content.codecademy.com/courses/learn-css-grid/lesson-ii/image-5.png" /> -->
+          <div class="prod-info">
+          <h3>Walnut</h3>
+          <h4>$3.99</h4>
+          <img class="plus-img" src="images/plus.png" style="margin-top: 65px;"/>
+          <!-- <img src="https://content.codecademy.com/courses/learn-css-grid/lesson-ii/time.svg" class="time" />
+          
           <p class="mins">25 mins</p>
+          
           <p class="description">
             In addition to the full flavor of goat cheese, this salad includes kale, avocado, and farro to balance it out.</p>
+          -->
+          </div>
         </div>
-        <div class="recipe d">
-          <img src="https://content.codecademy.com/courses/learn-css-grid/lesson-ii/image-4.png" />
-          <h2>CHICKEN SANDWICH</h2>
-          <img src="https://content.codecademy.com/courses/learn-css-grid/lesson-ii/time.svg" class="time" />
+
+
+        <div class="order d">
+          <img class="prod-img" src="images/blackberry.jpeg" />
+          <!-- <img src="https://content.codecademy.com/courses/learn-css-grid/lesson-ii/image-4.png" /> -->
+          <div class="prod-info">
+          <h3>Blackberry</h3>
+          <h4>$3.99</h4>
+          <img class="plus-img" src="images/plus.png" style="margin-top: 65px;"/>
+          <!-- <img src="https://content.codecademy.com/courses/learn-css-grid/lesson-ii/time.svg" class="time" />
+          
           <p class="mins">45 mins</p>
           <p class="description">
-            We've packed a lot into this one - shredded cabbage, carmalized onions, deep-fried chicken, chipotle mayo, half-sour pickles, and a toasted sesame bun will leave you thoroughly satisfied!</p>
+            We've packed a lot into this one - shredded cabbage, carmalized onions, deep-fried chicken, chipotle 
+            mayo, half-sour pickles, and a toasted sesame bun will leave you thoroughly satisfied!</p>
+          -->
+          </div>
         </div>
-        <div class="recipe e">
-          <img src="https://content.codecademy.com/courses/learn-css-grid/lesson-ii/image-3.png" />
-          <h2>SWEET CHURROS</h2>
-          <img src="https://content.codecademy.com/courses/learn-css-grid/lesson-ii/time.svg" class="time" />
-          <p class="mins">90 mins</p>
-          <p class="description">
-            Making this classic summer treat at home will remind you of a childhood spent in the park.</p>
+
+        <div class="order e">
+          <img class="prod-img" src="images/caramel-pecan.jpeg" />
+          <!-- <img src="https://content.codecademy.com/courses/learn-css-grid/lesson-ii/image-2.png" /> -->
+          <div class="prod-info">
+            <h3>Caramel Pecan</h3>
+            <h4>$3.99</h4>
+            <img class="plus-img" src="images/plus.png" />
+          <!-- <img src="https://content.codecademy.com/courses/learn-css-grid/lesson-ii/time.svg" class="time" />
+          
+            <p class="mins">120 mins</p>
+            <p class="description">
+            Want to feel like your favorite relative came over and made you dinner? This comfort meal of smoked lamb and rice will quickly become a weekend favorite!
+            </p>
+            -->
+          </div>  
         </div>
-        <div class="recipe f">
-          <img src="https://content.codecademy.com/courses/learn-css-grid/lesson-ii/image-6.png" />
-          <h2>BERRY PARFAIT</h2>
-          <img src="https://content.codecademy.com/courses/learn-css-grid/lesson-ii/time.svg" class="time" />
-          <p class="mins">10 mins</p>
-          <p class="description">
+
+
+        <div class="order f">
+          <img class="prod-img" src="images/pumpkin.jpeg" />
+          <!-- <img src="https://content.codecademy.com/courses/learn-css-grid/lesson-ii/image-6.png" /> -->
+          <div class="prod-info">
+            <h3>Pumpkin Spice</h3>
+            <h4>$3.99</h4>
+            <img class="plus-img" src="images/plus.png" />
+          <!-- <img src="https://content.codecademy.com/courses/learn-css-grid/lesson-ii/time.svg" class="time" />
+          
+            <p class="mins">10 mins</p>
+            <p class="description">
             This low-calorie, vitamin-packed parfait is great for breakfast, dessert, or post-workout!</p>
+            -->
+          </div>
         </div>
         
-        <div class="recipe e">
-          <img src="https://content.codecademy.com/courses/learn-css-grid/lesson-ii/image-3.png" />
-          <h2>SWEET CHURROS</h2>
-          <img src="https://content.codecademy.com/courses/learn-css-grid/lesson-ii/time.svg" class="time" />
-          <p class="mins">90 mins</p>
-          <p class="description">
-            Making this classic summer treat at home will remind you of a childhood spent in the park.</p>
-        </div>
-        <div class="recipe f">
-          <img src="https://content.codecademy.com/courses/learn-css-grid/lesson-ii/image-6.png" />
-          <h2>BERRY PARFAIT</h2>
-          <img src="https://content.codecademy.com/courses/learn-css-grid/lesson-ii/time.svg" class="time" />
-          <p class="mins">10 mins</p>
-          <p class="description">
-            This low-calorie, vitamin-packed parfait is great for breakfast, dessert, or post-workout!</p>
-        </div>
 
       </main>
 
       <footer>
-        <img src="https://content.codecademy.com/courses/learn-css-grid/lesson-ii/savory.svg" class="logo">
+        <div class="foot"> </div>
       </footer>
 
     </div>
