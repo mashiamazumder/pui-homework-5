@@ -1,0 +1,1 @@
+For extra credit, I prototyped all of the other individual product pages. These pages share a similar template, and can be accessed through the product browsing page (titled "SHOP"). Each image on the product browsing page is linked to the respective individual product page.
