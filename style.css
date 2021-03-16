@@ -8,8 +8,9 @@ main {
   display: grid;
   grid-template-columns: 430px 430px;
   grid-template-rows: repeat(3, 270px);
+  /* grid-template-rows: 40px 270px 270px 270px; */
   grid-gap: 75px;
-  /*margin-top: 75px; */
+  margin-top: 45px;
   justify-items: center;
   justify-content: center;
   align-items: stretch;
@@ -17,6 +18,26 @@ main {
   grid-auto-rows: 500px;
   grid-auto-flow: column;
 }
+
+.prod {
+  width: 50%;
+  display: inline-block;
+  /*
+  display: grid;
+  grid-template-columns: 430px 430px;
+  grid-template-rows: 870px; 
+  /* grid-template-rows: 40px 270px 270px 270px; 
+  grid-gap: 75px;
+  margin-top: 45px;
+  justify-items: center;
+  justify-content: center;
+  align-items: stretch;
+  align-content: center;
+  grid-auto-rows: 500px;
+  grid-auto-flow: column; */
+}
+
+
 
 h2 {
   font-family: Poppins;
@@ -56,6 +77,7 @@ h4 {
   font-weight: 400px;
   color: rgba(0,0,0,0.8);
   letter-spacing: 0.3px;
+  line-height: 1.6em;
   text-align: left;
   padding: 10px 0px 10px 10px;
   margin-bottom: 0px;
@@ -266,6 +288,11 @@ a:hover {
   text-decoration: underline;
 }
 
+.grey a:hover {
+  text-decoration: underline;
+  color: rgba(0,0,0,0.8);
+}
+
 .block{
   background-color:#F0CC95;
   width:50%;
@@ -398,8 +425,16 @@ a:hover {
   left:620px;
   top:189px;
 }
+
+#addButton1 { 
+  width:200px;
+  height:60px;
+  position:absolute;
+  left:50%;
+}
+
 #e1_23 { 
-  background-color:rgba(223.00000190734863, 178.00000458955765, 72.00000330805779, 1);
+  background-color:rgba(223, 178, 72, 1);
   width:200px;
   height:60px;
   position:absolute;
@@ -411,6 +446,29 @@ a:hover {
   border-bottom-right-radius:5px;
 }
 #orderButton { 
+  position: absolute;
+  left: 51%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  transform: translate(-50%,0%);
+  width: fit-content;
+  
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color:white;
+
+}
+
+#addButton { 
   position: absolute;
   left: 51%;
   right: 0%;
@@ -431,6 +489,8 @@ a:hover {
   color:white;
 
 }
+
+
 #e1_25 { 
   color:rgba(255, 255, 255, 1);
   width:998px;
@@ -653,18 +713,21 @@ h2 {
 
 /* Dropdown Button */
 .dropbtn {
-  background-color: #4CAF50;
+  background-color: #ffa500;
+  font-family: Poppins;
   color: white;
   padding: 16px;
-  font-size: 16px;
+  font-size: 15px;
   border: none;
-  left:50%;
+  /*left:50%;*/
 }
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
   position: relative;
   display: inline-block;
+  left:50%;
+  transform: translate(-50%,0px);
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -672,6 +735,8 @@ h2 {
   display: none;
   position: absolute;
   background-color: #f1f1f1;
+  font-family: Poppins;
+  font-size:13.5px;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -692,7 +757,25 @@ h2 {
 .dropdown:hover .dropdown-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .dropbtn {background-color: #E49400;}
+
+.foot-text {
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  text-align: center;
+  color: white;
+  padding: 35px 0px 10px 10px;
+  margin-bottom: 0px;
+}
+
+#prod-order {
+  width:40%;
+  position: absolute;
+  top: 200px;
+  left: 55%;
+}
 
 
 /* Product Cards */
