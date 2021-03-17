@@ -1,32 +1,23 @@
-header, footer {
-  background-color: #ffa500;
-  text-align: center;
-  min-width: 500px;
-}
+/* Style Sheet for Bun Bun Bake Shop website 
+   Mashia Mazumder (mmazumde)
+   PUI Spring 2021
+*/
 
-main {
-  display: grid;
-  grid-template-columns: 430px 430px;
-  grid-template-rows: repeat(3, 270px);
-  /* grid-template-rows: 40px 270px 270px 270px; */
-  grid-gap: 75px;
-  margin-top: 45px;
-  justify-items: center;
-  justify-content: center;
-  align-items: stretch;
-  align-content: center;
-  grid-auto-rows: 500px;
-  grid-auto-flow: column;
-}
+/* -------------- SECTION 1: General Styles --------------
+   Classes in this section are used across multiple pages
+*/
+
+/* Header styles */
 
 h2 {
   font-family: Poppins;
-  font-size: 18px;
-  font-weight: 600;
-  letter-spacing: 0.3px;
-  text-align: left;
-  color: #ffa500;
-  padding: 10px 0px 10px 10px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 136%; 
+  text-align: center;
+  letter-spacing: 1px;
+  color: #14142B;
 }
 
 h3 {
@@ -51,23 +42,10 @@ h4 {
   margin-top:0px;
 }
 
-.prod {
-  width: 50%;
-  display: inline-block;
-}
-
-
-.description {
-  font-family: Open Sans;
-  font-size: 13px; 
-  font-weight: 400px;
-  color: rgba(0,0,0,0.8);
-  letter-spacing: 0.3px;
-  line-height: 1.6em;
-  text-align: left;
-  padding: 10px 0px 10px 10px;
-  margin-bottom: 0px;
-
+/* Footer */
+footer {
+  background-color: #ffa500;
+  text-align: center;
 }
 
 img {
@@ -75,192 +53,10 @@ img {
   height: auto;
 }
 
-.order {
-  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.25);
-  /* box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5); */
-  width: 400px;
-  border-top-left-radius:30px;
-  border-top-right-radius:30px;
-  border-bottom-left-radius:30px;
-  border-bottom-right-radius:30px;
-  height: 270px;
-}
-
-.a {
-
-}
-
-.c {
-
-}
-
-.time {
-  padding-left: 10px;
-  padding-top: 10px;
-  width: 20px;
-  height: auto;
-}
-
-.mins {
-  display: inline-block;
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.3px;
-  text-align: left;
-  color: #4a4a4a;
-  position: relative;
-  bottom: 5px;
-}
-
-/*
-.description {
-  font-family: Work Sans;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 1.29;
-  letter-spacing: 0.1px;
-  text-align: left;
-  color: #4a4a4a;
-  padding: 10px 0px 10px 10px;
-  border-top: 1px solid #4a4a4a;
-}
+/* Formatting links (for nav bar)
+   NOTE: Code below is adapted from W3Schools "CSS Links" tutorial 
+   found at https://www.w3schools.com/css/css_link.asp
 */
-
-.logo {
-  width: 115px;
-  height: 21.1px;
-  object-fit: contain;
-  padding: 20px;
-}
-
-.container {
-  min-width: 500px;
-  margin: auto;
-  grid-template-areas: "left right"
-                       "footer footer";
-  grid-template-columns: 200px 400px;
-  grid-template-rows: 150px 200px 600px 200px;
-}
-
-header {
-  grid-area: header;
-}
-
-footer {
-  margin-top: 44px;
-  grid-area: footer;
-}
-
-nav {
-  grid-area: nav;
-}
-
-.left {
-  grid-area: left;
-}
-
-.right {
-  grid-area: right;
-}
-
-#e1_3 { 
-  overflow:hidden;
-  background-color:rgba(255, 255, 255, 1);
-  width:1440px;
-  height:2305px;
-  position:absolute;
-}
-#landing { 
-  /* width:1440px;
-  height:800px;
-  position:absolute;
-  left:0px;
-  top:0px; */
-}
-#e1_5 { 
-  width:1440px;
-  height:800px;
-  position:absolute;
-  left:0px;
-  top:0px;
-}
-#banner { 
-  width:1440px;
-  height:800px;
-  position:absolute;
-  left:0px;
-  top:0px;
-  background-image:url(images/eheader_bg.png);
-  background-repeat:no-repeat;
-  background-size:cover;
-  box-shadow:0 3000px rgb(50 20 0 / 36%) inset;
-}
-#e1_7 { 
-  transform: rotate(-90deg);
-    border: 1px solid rgba(255, 255, 255, 1);
-    width: 82px;
-    height: 1px;
-    position: relative;
-    /* left: 678px; */
-    top: 799px;
-    margin-left: auto;
-    margin-right: auto;
-}
-#e1_8 { 
-  transform: rotate(-3.12737043874882e-22deg);
-  border:1px solid rgba(255, 255, 255, 1);
-  width:530px;
-  height:1px;
-  position:absolute;
-  left:830px;
-  top:100px;
-}
-#e1_9 { 
-  transform: rotate(-3.3078712509457656e-16deg);
-  border:1px solid rgba(255, 255, 255, 1);
-  width:530px;
-  height:1px;
-  position:absolute;
-  left:80px;
-  top:100px;
-}
-#bar { 
-  background-color:rgba(223, 178, 72, 1);
-  width:60px;
-  height:6px;
-  position:relative;
-  /* left:691px; */
-  top:480px;
-  margin-left: auto;
-  margin-right:auto;
-  border-top-left-radius:50px;
-  border-top-right-radius:50px;
-  border-bottom-left-radius:50px;
-  border-bottom-right-radius:50px;
-}
-
-.nav {
-  margin:0;
-  padding: 20px 0;
-
-}
-
-.nav li {
-  color:white;
-  font-family:Poppins;
-  text-align:center;
-  font-size:15px;
-  letter-spacing:2px;
-  line-height: 6.5px;
-  position:relative;
-  left:339px;
-  /* top:0px; */
-  display: inline-block;
-  width: 135px;
-
-}
-
 a {
   color:white;
   text-decoration: none;
@@ -274,26 +70,28 @@ a:hover {
   text-decoration: underline;
 }
 
-.grey a:hover {
-  text-decoration: underline;
-  color: rgba(0,0,0,0.8);
-}
-
-.block{
-  background-color:#F0CC95;
-  width:50%;
-  position:absolute;
-  left:0px;
-}
-
-#navbar { 
-  width:1441px;
-  height:183px;
-  position:absolute;
-  left:0px;
-  top:0px;
+/* Navigation Bar */
+.nav {
+  margin:0;
+  padding: 20px 0;
 
 }
+
+/* List items in nav bar */
+.nav li {
+  color:white;
+  font-family:Poppins;
+  text-align:center;
+  font-size:15px;
+  letter-spacing:2px;
+  line-height: 6.5px;
+  position:relative;
+  left:339px;
+  display: inline-block;
+  width: 135px;
+}
+
+/* Maroon block of navigation bar */
 #navback { 
   background-color:rgba(109, 26, 2, 0.85);
   width:1441px;
@@ -302,58 +100,8 @@ a:hover {
   left:0px;
   top:0px;
 }
-#e1_13 { 
-  color:rgba(255, 255, 255, 1);
-  width:135px;
-  height:100px;
-  position:absolute;
-  left:339px;
-  top:0px;
-  font-family:Poppins;
-  text-align:center;
-  font-size:15px;
-  letter-spacing:3;
-  line-height:px;
-}
-#e1_14 { 
-  color:rgba(255, 255, 255, 1);
-  width:135px;
-  height:100px;
-  position:absolute;
-  left:479px;
-  top:0px;
-  font-family:Poppins;
-  text-align:center;
-  font-size:15px;
-  letter-spacing:3;
-  line-height:px;
-}
-#e1_15 { 
-  color:rgba(255, 255, 255, 1);
-  width:134px;
-  height:100px;
-  position:absolute;
-  left:837px;
-  top:0px;
-  font-family:Poppins;
-  text-align:center;
-  font-size:15px;
-  letter-spacing:3;
-  line-height:px;
-}
-#e1_16 { 
-  color:rgba(255, 255, 255, 1);
-  width:135px;
-  height:100px;
-  position:absolute;
-  left:969px;
-  top:0px;
-  font-family:Poppins;
-  text-align:center;
-  font-size:15px;
-  letter-spacing:3;
-  line-height:px;
-}
+
+/* Logo placement, overlaps with navigation bar */
 .logof { 
   width:202px;
   height:166px;
@@ -361,6 +109,8 @@ a:hover {
   left:619px;
   top:17px;
 }
+
+/* Off-white circle behind logo */
 #e1_18 { 
   border-radius:500px;
   background-color:rgba(255, 252, 238, 1);
@@ -370,40 +120,33 @@ a:hover {
   left:38px;
   top:20px;
 }
+
+/* Logo image */ 
 #e1_19 { 
   width:202px;
   height:166px;
   position:absolute;
   left:0px;
   top:0px;
-  background-image:url(images/e95_957843_transparent_cinnamon_rolls_png_cinnamon_roll_icon_png_1.png);
+  background-image:url(images/cinnamon-roll-logo.png);
   background-repeat:no-repeat;
   background-size:cover;
 }
-#e1_20 { 
-  width:1440px;
-  height:249px;
-  position:absolute;
-  left:1px;
-  top:326px;
-}
-#subt { 
 
-  color: white;
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 14px;
-    /* display: flex; */
-    /* align-items: center; */
-    /* text-align: center; */
-    letter-spacing: 0.5em;
-    text-transform: uppercase;
+/* Cart image for nav bar*/ 
+#carticon {
     position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0%);
+    width: 45px;
+    height: 37px;
+    left: 1340px;
+    top: 35px;
+    background: url(images/shopping-cart-icon.png);
+    background-size: 45px;
 }
+
+/* Call-to-action button element 
+   Used with "Order Now" and "Add to Cart" buttons 
+*/
 #e1_22 { 
   width:200px;
   height:60px;
@@ -412,13 +155,7 @@ a:hover {
   top:189px;
 }
 
-#addButton1 { 
-  width:200px;
-  height:60px;
-  position:absolute;
-  left:50%;
-}
-
+/* Call-to-action button fill */
 #e1_23 { 
   background-color:rgba(223, 178, 72, 1);
   width:200px;
@@ -426,11 +163,103 @@ a:hover {
   position:absolute;
   left:0px;
   top:0px;
-  border-top-left-radius:5px;
-  border-top-right-radius:5px;
-  border-bottom-left-radius:5px;
-  border-bottom-right-radius:5px;
+  border-radius: 5px;
 }
+
+/* Footer Text - used for shop name */
+.foot-text {
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  text-align: center;
+  color: white;
+  padding: 35px 0px 10px 10px;
+  margin-bottom: 0px;
+}
+
+/* Container for footer text */ 
+.foot {
+  width: 100%;
+  height: 100px;
+  background-color: #ffa500;
+}
+
+
+/* ------------- SECTION 2: Home Page ------------- */
+
+/* Large background image  */
+#banner { 
+  width:1440px;
+  height:800px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  background-image:url(images/banner-background.png);
+  background-repeat:no-repeat;
+  background-size:cover;
+  box-shadow:0 3000px rgb(50 20 0 / 36%) inset;
+}
+
+/* Text placement on banner */
+#banner-text { 
+  width:1440px;
+  height:249px;
+  position:absolute;
+  left:1px;
+  top:326px;
+}
+
+/* Sub-header, placed above large banner text
+   used for "Artisan Rolls" text */
+#subt { 
+  color: white;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 14px;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+/* Large text at center of banner - "Bun Bun Bake Shop" */
+#center-text { 
+  color:rgba(255, 255, 255, 1);
+  width:998px;
+  height:139px;
+  position:absolute;
+  left:221px;
+  top:14px;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 550;
+  font-size: 96px;
+  line-height: 0px;
+  
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Small bar under banner title "Bun Bun Bake Shop" */
+#bar { 
+  background-color:rgba(223, 178, 72, 1);
+  width:60px;
+  height:6px;
+  position:relative;
+  top:480px;
+  margin-left: auto;
+  margin-right:auto;
+  border-radius: 50px;
+}
+
+/* "Order Now" Button */
 #orderButton { 
   position: absolute;
   left: 51%;
@@ -454,150 +283,79 @@ a:hover {
 
 }
 
-#addButton { 
-  position: absolute;
-  left: 51%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
-  transform: translate(-50%,0%);
-  
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 20px;
-  
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.05em;
-  color:white;
-
-}
-
-
-#e1_25 { 
-  color:rgba(255, 255, 255, 1);
-  width:998px;
-  height:139px;
-  position:absolute;
-  left:221px;
-  top:14px;
-  
-
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 550;
-  font-size: 96px;
-  line-height: 0px;
-  
-  display: flex;
-  align-items: center;
-  text-align: center;
-  text-transform: uppercase;
-}
-#e1_26 { 
+/* Pointing arrow to guide users to scroll down on home page */
+#pointer { 
   width:60px;
   height:60px;
   position:absolute;
   left:690px;
   top:657px;
 }
-#e1_27 { 
+
+/* The 3 elements below are children of the pointer element */
+#pointer-elems { 
   width:60px;
   height:60px;
   position:absolute;
   left:0px;
   top:0px;
 }
-#e1_28 { 
+#outer-circle { 
   border-radius:500px;
-  border:1px solid rgba(255, 255, 255, 1);
+  border:1px solid white;
   width:60px;
   height:60px;
   position:absolute;
   left:-1px;
   top:0px;
 }
-#e1_29 { 
+#inner-circle { 
   border-radius:500px;
-  background-color:rgba(255, 255, 255, 1);
+  background-color:white;
   width:40px;
   height:40px;
   position:absolute;
   left:10px;
   top:10px;
 }
-#e1_30 { 
-  color:rgba(51.00000075995922, 51.00000075995922, 51.00000075995922, 1);
-  width:40px;
-  height:40.000003814697266px;
-  position:absolute;
-  left:10px;
-  top:9.999990463256836px;
-  font-family:Font Awesome 5 Free;
-  text-align:center;
-  font-size:20px;
-  letter-spacing:0;
-}
-#e1_31 { 
-  border:2px solid rgba(255, 255, 255, 1);
-  width:24px;
-  height:43px;
-  position:absolute;
-  left:38px;
-  top:388px;
-}
-#e1_32 { 
-  transform: rotate(180deg);
-  border:2px solid rgba(255, 255, 255, 1);
-  width:24px;
-  height:43px;
-  position:absolute;
-  left:1407px;
-  top:388px;
-}
-#e1_33 { 
-  background-color:rgba(249.6875050663948, 241.0063236951828, 220.55729538202286, 1);
-  width:1440px;
-  height:433px;
-  position:absolute;
-  left:0px;
-  top:800px;
-}
-#e1_34 { 
-  background-color:rgba(240.12501418590546, 203.7060508131981, 149.07761335372925, 1);
-  width:721px;
-  height:433px;
-  position:absolute;
-  left:0px;
-  top:800px;
+
+/* Arrow icon 
+   NOTE: This code was taken from W3Schools "CSS Arrows" examples 
+   found at https://www.w3schools.com/howto/howto_css_arrows.asp
+*/
+.arrow {
+    border: solid rgb(223 178 72);
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 7px;
 }
 
-h2 {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 38px;
-  line-height: 136%; 
-  
-  text-align: center;
-  letter-spacing: 1px;
-  
-  color: #14142B;
+/* Combine with arrow, for arrow pointing down */
+.down {
+  transform: rotate(45deg);
+}
+/* --- End of arrow code --- */
+
+/* Container - Used to create row with 2 colored columns */
+.splitrow {
+    width: 50%;
+    height: 433px;
+    position: absolute;
+    top: 800px;
 }
 
-#e1_35 { 
+/* Title formatting for home page rows */
+#home-row1 { 
   position: absolute;
   width:365px;
   height:102px;
   left:900px;
   top:880px;
-
 }
-#e1_36 { 
-  color:rgba(20.113124437630177, 19.65625025331974, 42.5000012665987, 1);
+
+/* Caption formatting for home page rows */
+#home-row1-subt { 
+  color:rgb(20,19,42);
   width:438px;
   position:absolute;
   left:864px;
@@ -609,28 +367,7 @@ h2 {
   line-height:px;
 }
 
-
-.arrow {
-    border: solid rgb(223 178 72);
-    border-width: 0 4px 4px 0;
-    display: inline-block;
-    padding: 7px;
-
-}
-
-.down {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-}
-
-.splitrow {
-    width: 50%;
-    height: 433px;
-    position: absolute;
-    top: 800px;
-}
-
-
+/* Image for home page row 1 */
 #hpicon{
     position: absolute;
     width: 450px;
@@ -641,17 +378,58 @@ h2 {
     background-size: cover;
 }
 
+/* ------------- SECTION 3: Product Gallery ------------- */
 
-#carticon {
-    position: absolute;
-    width: 45px;
-    height: 37px;
-    left: 1340px;
-    top: 35px;
-    background: url(images/shopping-cart-icon.png);
-    background-size: 45px;
+/* Grid for product gallery 
+   NOTE: This code was adapted from a Codeacamy "Advanced CSS Grid" lesson,
+   accessed through the "Grid" chapter of the "Learn CSS" introductory course. 
+   https://www.codecademy.com/courses/learn-css/lessons/css-grid-ii/exercises/review-ii
+
+   I adjusted the code to match specific column and row dimensions, gaps, and areas. 
+*/
+main {
+  display: grid;
+  grid-template-columns: 430px 430px;
+  grid-template-rows: repeat(3, 270px);
+  grid-gap: 75px;
+  margin-top: 45px;
+  justify-content: center;
+  align-items: stretch;
+  align-content: center;
+  grid-auto-rows: 500px;
+  grid-auto-flow: column;
 }
 
+.container {
+  min-width: 500px;
+  margin: auto;
+  grid-template-areas: "left right"
+                       "footer footer";
+  grid-template-columns: 200px 400px;
+  grid-template-rows: 150px 200px 600px 200px;
+}
+
+.left {
+  grid-area: left;
+}
+
+.right {
+  grid-area: right;
+}
+/* --- End of code adapted from Codecademy -- */
+
+/* Product card in grid cell */
+.order {
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.25);
+  width: 400px;
+  border-top-left-radius:30px;
+  border-top-right-radius:30px;
+  border-bottom-left-radius:30px;
+  border-bottom-right-radius:30px;
+  height: 270px;
+}
+
+/* Image on product cards */
 .prod-img{
   width: 240px;
   object-fit: cover;
@@ -661,17 +439,19 @@ h2 {
   float: left;
 }
 
+/* Content on product cards */
 .prod-info {
-   float: right;
-   width: 150px;
+  float: right;
+  width: 150px;
 
-    .content {
-      padding: 1em;
-      position: relative;
-      z-index: 1;
-    }
+  .content {
+    padding: 1em;
+    position: relative;
+    z-index: 1;
   }
+}
 
+/* Plus icon at the bottom right of product cards */
 .plus-img{
   width: 50px;
   object-fit: cover;
@@ -683,13 +463,11 @@ h2 {
   margin-top: 35px;
 }
 
-.foot {
-  width: 100%;
-  height: 100px;
-  background-color: #ffa500;
-}
-
-/* Dropdown Button */
+/* Dropdown Button 
+   NOTE: the code below pertaining to the dropdown button was adapted from 
+   W3Schools example at https://www.w3schools.com/howto/howto_css_dropdown.asp
+   I adjusted the code to match the site's font and color patterns. 
+*/
 .dropbtn {
   background-color: #ffa500;
   font-family: Poppins;
@@ -697,7 +475,6 @@ h2 {
   padding: 16px;
   font-size: 15px;
   border: none;
-  /*left:50%;*/
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -736,23 +513,48 @@ h2 {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #E49400;}
+/* -- End of Dropdown Menu code -- */
 
-.foot-text {
-  font-family: Poppins;
-  font-size: 22px;
-  font-weight: 500;
-  letter-spacing: 0.3px;
-  text-align: center;
-  color: white;
-  padding: 35px 0px 10px 10px;
-  margin-bottom: 0px;
+
+/* ------------- SECTION 4: Individual Product Pages ------------- */
+
+/* Element for 2-column layout */
+.prod {
+  width: 50%;
+  display: inline-block;
 }
 
+/* Container for product info */
 #prod-order {
   width:40%;
   position: absolute;
   top: 200px;
-  left: 55%;
+  left: 55%; /* Positioned as right column */
 }
 
+/* Font styling for product details */
+.description {
+  font-family: Open Sans;
+  font-size: 13px; 
+  font-weight: 400px;
+  color: rgba(0,0,0,0.8);
+  letter-spacing: 0.3px;
+  line-height: 1.6em;
+  text-align: left;
+  padding: 10px 0px 10px 10px;
+  margin-bottom: 0px;
+}
 
+/* Links in product page, e.g. 'Return to Shop' */
+.grey a:hover {
+  text-decoration: underline;
+  color: rgba(0,0,0,0.8);
+}
+
+/* Positioning Add to Cart button */
+#addButton1 { 
+  width:200px;
+  height:60px;
+  position:absolute;
+  left:50%;
+}
